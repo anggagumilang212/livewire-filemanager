@@ -23,4 +23,4 @@ Route::middleware('auth')->group(function () {
 
 require __DIR__ . '/auth.php';
 
-Route::get('{path}', [FileController::class, 'show'])->where('path', '.*')->name('assets.show');
+// Route::get('{path}', [FileController::class, 'show'])->where('path', '.*')->name('assets.show');
