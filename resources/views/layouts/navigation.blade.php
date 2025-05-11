@@ -86,6 +86,12 @@
             <x-responsive-nav-link :href="route('dashboard')" :active="request()->routeIs('dashboard')">
                 {{ __('Dashboard') }}
             </x-responsive-nav-link>
+            <x-responsive-nav-link :href="route('file-manager')" :active="request()->routeIs('file-manager')">
+                {{ __('File manager') }}
+            </x-responsive-nav-link>
+            {{-- <x-responsive-nav-link :href="route('profile.edit')" :active="request()->routeIs('profile.edit')">
+                {{ __('Profile') }}
+            </x-responsive-nav-link> --}}
         </div>
 
         <!-- Responsive Settings Options -->
