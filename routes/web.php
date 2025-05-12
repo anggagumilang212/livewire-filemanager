@@ -19,7 +19,7 @@ Route::middleware('auth')->group(function () {
     Route::delete('/profile', [ProfileController::class, 'destroy'])->name('profile.destroy');
 });
 
-Route::view('file-manager', 'file-manager')->name('file-manager');
+Route::view('file-manager', 'file-manager')->name('file-manager')->middleware('auth');
 
 require __DIR__ . '/auth.php';
 
